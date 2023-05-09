@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  overflow-x: hidden;
+}
+#seekbar{
+
+  z-index: 999;
+
+  /* width: 20%; */
+  /* margin-left: 10px; */
+  /* margin-top: 1.5%; */
+  position: absolute;
+  cursor: pointer;
+  height: 4px;
+  background-color: rgb(47, 18, 211);
+  border-radius: 2rem;
+  /* width:17em; */
+}
+#seek{
+  z-index: 999;
+  /* width: 80vw; */
+
+  /* width: 90%; */
+  /* margin-left: 4px; */
+  margin-top: 10em;
+  position: absolute;
+  cursor: pointer;
+  height: 4px;
+  background-color: rgba(138, 126, 129, 0.288);
+  border-radius: 2rem;
+  width:17em;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+.albumArt{
+  animation: rotation 3s infinite;
+} */
